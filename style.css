@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bf-h {
+  position: relative;
+}
+
+#bf-h::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  bottom: -2px;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+#bf-h:hover::after {
+  transform: scale(1);
+  transform-origin: bottom left;
+}
+
+#drop-hov:hover #drop-hove {
+  display: block;
+}
+
+.text-1 {
+  font-family: 'Pacifico', cursive;
+}
+
+#font-11 {
+  font-size: 50px;
+}
+
+/* ----number counter-------------------- */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+.counter-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/stats-bg.jpg);
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  .counter-1 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .counter-1 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/* ----------------our  Swiper------------------------------ */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* gallary slider start */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* gallary slider ends */
